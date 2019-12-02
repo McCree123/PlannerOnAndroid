@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/NameTaskInput"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:layout_marginStart="30dp"
+                android:hint="@string/InputNameTask"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/BodyTaskInput"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:layout_marginStart="30dp"
+                android:hint="@string/InputAboutTask"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center"
+            >
+
+            <DatePicker
+                android:id="@+id/DateCompletedTaskInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/SubmitNewTask"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="80"
+                android:text="@string/Submit"
+                android:textSize="20sp"
+                android:onClick="SubmitNewTask"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

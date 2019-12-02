@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="menu">Menu</string>
+    <string name="leftmenuitem1">LeftMenuItem1</string>
+    <string name="leftmenuitem3">LeftMenuItem3</string>
+    <string name="leftmenuitem2">LeftMenuItem2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="InputNameTaskLabel">Имя задачи</string>
+    <string name="InputNameTask">Введите имя задачи</string>
+    <string name="InputAboutTask">Описание</string>
+    <string name="Submit">Отправить</string>
+</resources>
